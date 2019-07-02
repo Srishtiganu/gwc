@@ -1,0 +1,142 @@
+<!Doctype html>
+  <head>
+    <link rel="stylesheet" href="mypage.css">
+    <script src="mypage.js"></script>
+    <title>Cockatiel Corner</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+
+    <div id="header">
+      <h1>Srishti's Cockatiel Corner</h1>
+    </div>
+
+    <div id="top">
+      <img src="bothbird.jpg">
+      <p>Cockatiels are small parrots that are native to Australia. Known for their gentler, quieter nature, they are often very popular type of pet parrot. Many people know of cockatiels as the parrots with “mohawks”. These head feathers are actually called a crest, and can let you know of that cockatiel’s mood. Cockatiels can be easy to train and their social nature gives people the opportunity to pet, talk to, and interact with them. </p>
+    </div>
+    <br>
+    <div class="care section">
+      <h2>Bird Care</h2>
+      <p>Before I got a parrot, I did hours upon hours of research. The level of care involved in having a pet bird is often underestimated. Especially with larger birds, there is more care involved than with them than even dogs! They require a lot of attention, and the finances of owning a bird are often overlooked as well. Avian vet charges are much more expensive than vet expenses for cats or dogs. A helpful website I looked at first was Mickaboo.org, but I highly recommend people interested in getting a bird to do a lot of research and consider taking a Mickaboo bird class!</p>
+      <a href="http://www.mickaboo.org/basic-bird-care-class">Mickaboo Classes</a>
+      <br>
+      <a href="https://www.cockatiel.com/">Bird Care Info</a>
+    </div>
+
+<div class ="about">
+    <!-- <h2>About Athena</h2> -->
+    <div class="left">
+      <img src="athena.jpg">
+    </div>
+    <div class="right">
+      <h2>About Athena</h2>
+      <p>Athena was somebody’s lost bird that we indirectly adopted. When we didn’t hear back from any owner claiming her, she became our bird. Because of her regal, “don’t touch me” aura, I named her as such. She’s afraid of hands, hates most humans, but loves my dad. She could sit with him for hours. She is a beautiful pearl cockatiel.</p>
+    </div>
+</div>
+<br>
+<div class = "about">
+    <!-- <h2>About Pepper</h2> -->
+    <div class="left">
+      <img src="pepper.jpg">
+    </div>
+    <div class="right">
+      <h2>About Pepper</h2>
+      <p>Pepper is a three year old male cockatiel who loves to whistle, scream, and give kisses. Unlike Athena, he enjoys my company and loves to listen to any tunes I whistle to him. He was named Pepper because the dark color of his wings resembled black pepper. Both birds are very picky eaters and love baths when it's hot.</p>
+    </div>
+</div>
+
+    <div id="ending">
+      <p>Birds can be a very adorable and sweet companion to have as part of your family.</p>
+      <h3>A couple of my favorite bird videos:</h3>
+      <iframe class="vid" width="320" height="245"
+      src="https://www.youtube.com/embed/U9NZnpleU0s">
+      </iframe>
+      <br>
+      <iframe class="vid" width="320" height="245"
+      src="https://www.youtube.com/embed/O7D-1RG-VRk">
+      </iframe>
+    </div>
+
+    <div class="container">
+      <!-- full width images and number text -->
+      <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+          <img src="birb1.jpg" style="width:100%">
+          <div class="text">Pepper likes car rides</div>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+          <img src="birb2.jpg" style="width:100%">
+          <div class="text">Rainy day car ride</div>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+          <img src="birb7.jpg" style="width:100%">
+          <div class="text">I enjoy bird memes</div>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+          <img src="cute.jpg" style="width:100%">
+          <div class="text">Looking up :)</div>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+          <img src="birb5.jpg" style="width:100%">
+          <div class="text">Pepper looks like he has eyebrows</div>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+          <img src="birb6.jpg" style="width:100%">
+          <div class="text">Athena loves to snuggle in our necks</div>
+      </div>
+  <!-- forward backward buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+
+    <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+  </body>
